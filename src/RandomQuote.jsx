@@ -39,6 +39,9 @@ const RandomQuote = () => {
       <h1 className="card__quote" id="text" style={{ color: color, transition: 'color 0.5s ease' }}>
         <span>"</span>{quote}<span>"</span>
       </h1>
+      <p className="card__author" id="author">
+            - {author}
+          </p>
       <div className="card__content">
         <div className="content__left">
           <div className="left__anchor" style={{ backgroundColor: color, transition: 'background-color 0.5s ease'}}>
@@ -76,9 +79,6 @@ const RandomQuote = () => {
           </div>
         </div>
         <div className="content__right">
-          <p className="right__author" id="author">
-            - {author}
-          </p>
           <button
             onClick={fetchQuote}
             id="new-quote"

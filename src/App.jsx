@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='main'>
       <RandomQuote />
-      <p>by José Antonio Sánchez Fuentes</p>
+      <p className='credits'>by José Antonio Sánchez Fuentes</p>
     </div>
   )
 }
